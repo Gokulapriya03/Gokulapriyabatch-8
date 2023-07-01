@@ -1,0 +1,12 @@
+create database db_1;
+create table student(stu_id int primary key,s_name varchar(30), department text);
+describe student;
+alter table student add ph_no varchar(10);
+alter table student drop department;
+insert  into student values
+(1,"aaa","agri"),
+(2,"bbb","mech"),
+(3,"ccc","bio"),
+(4,"ddd","civil");
+insert into student (stu_id,s_name) values(5,"eee");
+select *from student;
